@@ -1,0 +1,1 @@
+lua src/sum_of_squares.lua

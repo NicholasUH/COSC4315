@@ -1,0 +1,15 @@
+Assign4: Due 11:59PM CT November 22
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+In this assignment we will use two different languages, one statically typed and the other dynamically typed. At least one language should be the one that you have not used already in the previous assignments.
+
+We will create a console application (no GUI). The program will implement a guessing game. The program will first create a random number between 1 and 100 and ask the user to guess. The program will then display if the user's guess was higher than, lower than, or equal to the selected number. The game continues until the user guesses correctly and then displays the number of attempts the user took. Program with total immutability, that is once a variable is initialized it should not be assigned to. Do not use recursion.
+
+Please drop an email to Venkat to check if your language choices are OK before you invest too much time into any of them.
+
+It should be obvious by now, we write test first.
+
+Total[100]: 100
+

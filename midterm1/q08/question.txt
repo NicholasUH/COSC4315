@@ -1,0 +1,11 @@
+Given a list of names, like "Tom", "Jerry", "Terry", "Nick", "Sean", "Walter", "Susan", etc. as an example, write a program in any language to print out the (sorted) first letter and the number of names with that letter. For instance, for the given example the output should be, J: 1, N: 1, S: 2, T: 3, W: 1.
+
+No need to write any tests for the code, however, keep the calling code separate from the code that does the work. Call the function that computes the results four times with the following lists:
+1. Empty list of names
+2. List with "Tom", "Jerry"
+3. List with "Dory", "Jack", "Theo", "Darla", "Bruce", "Marlin", "Bob", "Jacques", "Bill", "Zack"
+4. List with "Jim", "Jorge", "Jill", "Jim", "John", "Joe"
+
+Save your code with proper extension for the language you use and provide a build file to compile (if compilation is necessary) and run the program.
+
+Total[10]: 10

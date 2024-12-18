@@ -1,0 +1,12 @@
+Suppose we have an immutable list with a 100 elements. We want to create a new 
+list with one new/additional element in the list. Explain how languages that 
+promote immutability handle this and what's the cost (time complexity and 
+space complexity) of creating the new list.
+
+In languages that promote immutability (e.g., Haskell, Scala, and Clojure), immutable lists are implemented as persistent data structures--data structures that preserve the previous version of themselves when modified. These lists are often implemented as singly linked lists, where each node contains a value and a reference/pointer to the next node. 
+
+When adding a new element to an immutable list, a new list is created that shares its structure with the original list. Instead of modifying the existing list, a new node is created for the element and the new node points to the head of the original list. The original list remains unchanged, with the new list reusing its existing structure. So, the length of the original list will still be 100, while the new list's length is 101. 
+
+Adding an element to the head of the list has a time complexity of O(1) because only one new node is created and linked to the original list. Adding to the middle or the end of the list would be an O(n) operation because it requires traversing the list. The space complexity of this operation would be O(1) since the original nodes are reused, and only the new nodes require additional memory. 
+
+Total[10]: 10

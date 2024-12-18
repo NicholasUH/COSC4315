@@ -1,0 +1,6 @@
+Considering Static typing, Dynamic Typing, Strong Typing, and Weak Typing, state the nature of the TypeScript language <https://www.typescriptlang.org/> on these four qualities. Discuss, give reasons for your assessment.
+
+TypeScript is a statically typed and strongly typed language, meaning it checks types at compile time and enforces strict type rules, preventing unintended type coercions. While primarily static, it offers flexibility with dynamic typing through "any" type, allowing developers to opt out of strict type checks when needed. Unlike weakly typed languages, TypeScript avoids implicit type conversions, ensuring safer and more predictable code. This combination of static, strong typing with optional dynamic flexibility makes TypeScript robust yet versatile.
+
+Total[10]: -5
+TypeScript is statically typed (as there is a compiler) and weakly typed since it translates to JavaScript.

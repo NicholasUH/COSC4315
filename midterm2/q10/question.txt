@@ -1,0 +1,15 @@
+Observe the following Haskell REPL session:
+
+Prelude> let multiply op1 op2 = op1 * op2
+multiply :: Num a => a -> a -> a
+Prelude>
+
+Explain the details the REPL reported between the two Prelude> lines.
+
+The first line (let multiply op1 op2 = op1 * op2) defines a function called multiply that takes two arguments, op1 and op2, and returns their product.
+
+The second line (multiply :: Num a => a -> a -> a) shows the function's type, specifying that it works with numeric types (Num a) and takes two inputs of the same type a, returning a result of type a.
+
+The (a -> a -> a) reflects currying, where the function takes op1 first and returns a new function. This returned function then takes op2 and computes the result. op1 is also implicitly passed along to the second function.
+
+Total[10]: 10

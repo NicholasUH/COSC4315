@@ -1,0 +1,17 @@
+This code is not in any specific language; it's a pseudo-code.
+
+values = [1, 2, 3]
+factor = 4
+values.foreach { e -> print(e * factor) }
+factor = 7
+
+Is the lambda expression / closure passed to foreach a pure function?
+Explain, giving reason for your observation.
+
+The lambda expression passed to foreach is not a pure function because it violates both requirements for purity: no side effects and deterministic output. 
+
+First, the function relies on an external variable, factor, which is mutable and can change its value outside the lambda. This dependency on a mutable external state makes the output non-deterministic, as the results of the lambda can vary depending on the state of factor at the time of execution. 
+
+Second, the function has a side effect due to the print() statement, which interacts with the outside world by producing output. These characteristics--reliance on mutable external state and producing side effects--disqualify the lambda from being a pure function.
+
+Total[10]: 10 

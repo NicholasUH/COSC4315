@@ -1,0 +1,13 @@
+Functional programming languages insist on pure functions, no-side effects, and
+immutability. Why is that so critical?
+
+Functional programming languages emphasize pure functions, no side effects, and immutability because these principles form the foundation for predictable, maintainable, and scalable software. 
+
+Pure functions always produce the same output for the same input, ensuring referential transparency and making the code easier to read and debug. They are self-contained and deterministic, enabling them to be easily reused and composed into more complex operations, promoting modular and expressive code design. 
+
+By avoiding side effects (e.g. modifying global variables, performing I/O, external system interactions), functional programming minimizes sources of unintended behavior which makes functions easier to test and understand.
+
+Immutability ensures that data structures cannot be changed after creation, preventing issues caused by unintended state changes. Immutability also eliminates race conditions and deadlocks by avoiding shared mutable state and side effects, making multithreaded concurrency easier to achieve. 
+
+Total[10]: 5
+Need to tie this to how functional programming relies on lazy evaluation and how lazy evaluation relies on purity of functions.

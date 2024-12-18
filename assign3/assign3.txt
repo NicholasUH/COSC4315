@@ -1,0 +1,49 @@
+Assign3: Due 11:59PM CT November 1
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+We're going to design and implement a DSL—Domain Specific Language in this assignment. The syntax for the DSL will be influenced by the languages we use.
+
+Design a DSL in two different languages, one statically typed and the other dynamically typed. Please drop an email to Venkat to check if your language choices are OK before you invest too much time into any of them.
+
+The DSL will be used to schedule a meeting. The syntax has to be highly fluent (not feel like code), have less noise, read more like English. The syntax will vary depending on the capability of the  languages used, but here's one example:
+
+schedule meeting
+  name 'early admissions'
+  start 14:30
+  end 15:30
+  on 10 15 2018
+  participants {
+    'Kim R.'
+    'Mike B.'
+    'Paula P.'
+    'Chin Z.'
+  }
+
+Running this code should print the details of the meeting: the name, start time, end time, duration, the date, how many people will attend, and the names of those who will attend.
+
+Create build files and write code in increments after writing test first.
+The key is to take small steps, get one line of the DSL working at a time. 
+This will help you solve one problem at a time and avoid getting overwhelmed 
+with issues.
+
+Ask for frequent reviews, start with one language first, get that done before 
+taking on the next language.
+
+Do not use Java, C#, C++, or Python. Choose a language that will be very fluent in syntax—less noise, less ceremony, less clutter,...
+
+Total [100]: 100
+
+Language 1: 
+Build executes tests and the code[10]:
+Test quality [10]:
+Design quality [20]:
+Code quality [10]:
+
+Language 2: 
+Build executes tests and the code[10]:
+Test quality [10]:
+Design quality [20]:
+Code quality [10]:
+

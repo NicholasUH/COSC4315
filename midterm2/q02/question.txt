@@ -1,0 +1,13 @@
+What are the characteristics that a language should have in order for it to be a good choice to serve as a host for creating internal DSLs? Mention three languages that meet those expectations and mention three that don't.
+
+For languages to be a good candidate for creating an internal DSL, they must have low ceremony and metaprogramming capabilities. 
+
+A language with low ceremony provides flexible, concise syntax that allows developers to write expressive, domain-specific constructs without being burdened by boilerplate or rigid conventions (e.g. semicolons, parentheses, etc.) which can detract from the DSL's readability. 
+
+Metaprogramming provides the dynamic flexibility needed to adapt a language to a specific domain. This allows the language to be extended or customized to better suit the domain, enabling it to generate, manipulate, and analyze code at runtime or compile-time. This capability allows the DSL to introduce custom constructs that feel like native language features. 
+
+Additionally, features such as operator overloading, infix notation, and support for lambdas and closures make it possible to design DSLs that focus more on the domain rather than the language overhead.
+
+Three languages that meet these expectations include: Ruby, Groovy, and Kotlin, and three languages that fail these expectations include: Java, C++, and C. 
+
+Total[10]: 10

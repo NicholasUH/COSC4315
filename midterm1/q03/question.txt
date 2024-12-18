@@ -1,0 +1,7 @@
+What are some of the main differences between statements and expressions? What are the consequences of prefering one over the other?
+
+The main difference between statements and expressions is that statements perform actions (such as assignments or loops) and can control complex program flow using if/for/while statements, while expressions produce a value when evaluated (such as 5+5 or "Hello World!"). Statements are typically used in imperative programming for managing state changes and controlling program flow through step-by-step execution. In contrast, expressions are key in functional programming, promoting immutability and avoiding side effects by returning values. 
+
+Preferring statements over expressions can lead to less readable code due to their sequential execution and lack of return values which can also introduce mutability into your program. In addition to this, they are not as easily composable/nested in the same way expressions can. Preferring expressions over statements result in more concise, readable code but may struggle with complex control flows that require error handling or conditional loops, unlike statements.
+
+Total[10]: 10

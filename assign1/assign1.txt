@@ -1,0 +1,80 @@
+Assign1: Due 11:59PM CT September 20
+
+***Please review the top part of ../hw1/hw1.txt***
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late. Please use as many reviews as you possibly can.***
+
+A lot of help will be provided for those who ask. Do not get stuck on a problem for too long. Please time box. Allow yourself, for example, one hour. If you can't find a solution in that time, ask Venkat for help.
+
+For this assignment we will use three different languages. One has to be a statically typed language. One has to be a dynamically typed language. A third is your choice. Do not pick two languages that are too similar to each other. Please drop an email to Venkat to check if your language choices are OK before you invest too much time into any of them.
+
+Start with one language. Write the code in that language, evolve it using reviews. Once you've completed code in one language and gotten a satisfactory review, then create in second language. Once that's completed, proceed to the third language. Venkat will let you know, during reviews, when it is time to move forward with the second or the third language.
+
+Create files using proper extensions. Also create either a build file or a sh file that will compile (if necessary) and run your code to display the output or show test results automatically. Venkat and your partner should be able to easily run your code with run of one build or sh file. Again, please do not hesitate to ask for help after the time boxed effort.
+
+If you need help with any of the steps, please ask. You do not have to fight with tools or code for a long time. The purpose of this course is to learn. If you're stuck, then ask for help and it will be given. If you start early, you will be able to make much better progress than if you start late.
+
+In each of the languages, create two implementations for a function that will tell whether a number, given as argument, is a perfect number or not.
+
+A perfect number is a number greater than 1 whose factors total to twice the number. For example, the factors of 6 are 1, 2, 3, and 6. The total of these values is 12 which is twice the given number 6.
+
+The first implementation, in each language, should be in imperative style. The second implementation, in each language, should be in functional style with no explicit mutation of variables. Start with a test first and write minimum code to pass the tests after, each step of the way.
+
+After completing the coding (and only after that), answer the following questions:
+
+1. Discuss some of the things you have learned from working on this assignment.
+
+While working on this assignment, we gained valuable insights into setting up build files and writing tests for Java, Ruby, and Go using their respective testing frameworks: JUnit for Java, RSpec for Ruby, and the testing package for Go. 
+
+We also learned new syntax and language-specific features from Ruby and Go. For example, in Ruby, we discovered that methods automatically return the result of the last evaluated expression, eliminating the need for an explicit return statement. We learned about Go's unique approach to function signatures, where data types are specified after the function's parameters and the shorthand variable declaration operator. 
+
+
+2. Were there any thing that surprised you or things that you did not expect.
+
+Something surprising and unexpected was the lack of built-in higher-order functions, such as map, filter, and sum, and internal iterators in Go, which affected our ability to program in a functional style. Without the external functional programming library for Go (fp-go), we found it surprisingly difficult to achieve a purely functional paradigm in Go as we could not code the function without modifying its program state through loops or recursion. This finding deepened our appreciation and understanding of each language's strengths and intended use cases. 
+
+
+3. Given this experience, draw a comparison between the imperative style and the functional style.
+
+In imperative programming, the logic is written as step-by-step instructions. We use a loop structure to iterate through all numbers, checking for factors and adding them to a variable that stores the sum. This approach relies on changing the state of variables, which is a crucial distinction from functional programming. While this style made the code easier to follow in terms of what it does and how it reaches the correct output, it was more verbose, requiring more lines of code compared to the functional style.
+
+In contrast, functional programming is more declarative. Instead of focusing on step-by-step instructions, it uses functions to transform data. For example, in Java, we can generate a range of numbers using IntStream.rangeClosed(), then apply filter() to find factors, and finally use sum() to get the total. Although the exact function names differ between languages, the underlying approach remains the same. Functional-style code is generally more concise and cleaner since it abstracts away the logic, transforming data in a streamlined way—from generating the range, filtering down to factors, and summing them up.
+
+
+4. Given this experience, draw a comparison between static typing and dynamic typing.
+
+Overall, we observed minimal differences between static and dynamic typing when implementing the logic. Static typing, as seen in Java or Go, tends to be more verbose. In Java, for example, explicit type declarations are required to write the actual type, like int, or use var, whereas Go offers shorthand declarations with :=. Despite this, the impact on logic implementation was relatively negligible.
+
+
+5. Of the three languages that you used, what are your impressions about each, their strengths, weaknesses, your likes/dislikes.
+
+Coding in Java was a smooth transition because we are accustomed to seeing a similar syntax in C++. We appreciated the structured and organized nature of Java's syntax, particularly the use of curly braces and explicit return statements. We also found Java's extensive library of built-in higher-order functions, such as filter and sum, useful for programming in a functional style. 
+However, we encountered some challenges when setting up the build environment using Maven. The amount of files and complexity involved in the Maven configuration made the process tedious, especially for simpler projects. 
+Java's strengths lie in its strong static typing which enforces strict checks at compile time, reducing runtime errors. Its weakness is its verbosity, since Java requires a lot of boilerplate code, which can make it less readable. 
+
+Moving on to Ruby, we enjoyed Ruby's concise and highly readable syntax, which almost reads like plain English, making it approachable and easier to understand. Despite neither of us having prior experience in Ruby, it was fairly simple to pick up while leveraging our previous Python knowledge. We also had a positive experience setting up the testing framework, RSpec, and the build file for Ruby since both were straightforward to set up. We didn't have anything we disliked about Ruby so far, but our perspective could shift if we ever have the chance to use Ruby in a full-stack project where performance and scalability become more critical factors. 
+Ruby's strength is its easy-to-read syntax, making it easier for new programmers to get up to speed. However, a weakness of Ruby is its relatively high memory usage since Ruby treats everything as an object, including primitive data types like integers and booleans. This could lead to slower performance in more complex applications. 
+
+Lastly, Go is a language neither of us has ever touched. We found it straightforward and addressed many things that the other two languages did not. The first thing we noticed was that all the stuff outside of coding, like build automation, managing dependencies, and testing, were built-in, which made setup simple and allowed us to get straight to coding quickly--a key strength of Go. We found the syntax very simple, similar to Python or Ruby, so figuring out the basic things like writing loops and functions was pretty straightforward. We noticed that Go has a shorthand to declare variables with :=, which made things more concise since we didn't have to write out the type explicitly. One weakness or conflict that we found in Go was its lack of built-in functions useful for functional programming, such as reduce or filter. This is due to the language's philosophy on simplicity and performance, opting to have increased clarity and explicitness. We had to import the fp-go library to use those functions to make coding a functional solution possible. This was not too bad, as Go's way of managing imports and dependencies is simple.
+
+
+Total[100]: 100
+
+Language 1 [30]: 
+build file and tests [5]:
+imperative style [5]:
+functional style with no mutation [10]:
+code quality [10]:
+
+Language 2 [30]: 
+build file and tests [5]:
+imperative style [5]:
+functional style with no mutation [10]:
+code quality [10]:
+
+Language 3 [30]: 
+build file and tests [5]:
+imperative style [5]:
+functional style with no mutation [10]:
+code quality [10]:
+
+Response to questions [10]:

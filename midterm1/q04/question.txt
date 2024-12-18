@@ -1,0 +1,16 @@
+(iteration:)
+Use one of the languages you used for assignment 2.
+
+Save the source file with proper extension and provide a build file to run the code. Don't write any tests, only code for this question. Follow language conventions.
+
+Write a function that will take a list of numbers as parameter and return the sum of squares of the numbers.
+
+Write the function using iteration but honor immutability.
+
+Call the function a few times, with each of the following arguments:
+empty list []
+list of values [1]
+list of values [1, 2]
+list of values [1, 2, 4, 7]
+
+Total[10]: 10

@@ -1,0 +1,13 @@
+A purely functional language does not permit functions with side-effects. However, a realistic program cannot survive without side-effects. What do pure-functional languages do to get around these concerns? Explain.
+
+Purely functional languages address the challenge of side effects by monads, which encapsulate side effects in a functional manner. This allows functions to remain pure while still interacting with the outside world.
+
+Monads provide a way to sequence operations while preserving immutability and functional integrity. They explicitly model side effects, ensuring that such effects are predictable, isolated, and controlled.
+
+One of the main benefits of monads is that they make side effects explicit and manageable. By isolating side effects from the rest of the program, monads help maintain functional purity. This predictability allows developers to reason about side-effecting code more easily and ensures that the rest of the program remains unaffected by external changes.
+
+For example, in Haskell, the IO monad is used to handle input/output operations. It wraps multiple side-effecting actions into a single IO action, ensuring that the side effects do not leak into the rest of the program.
+
+This approach keeps the program's core logic pure while enabling necessary real-world interactions. It also helps developers reason about and manage side effects more effectively.
+
+Total[10]: 10

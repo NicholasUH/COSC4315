@@ -1,0 +1,29 @@
+Display the number of cores available on a system in three different language REPLs. Copy and paste your REPL session below, one after the next for the three languages. Give a few lines of blank space between each REPL session. The interactive session you copy and paste should clearly show the REPL tool being used on the command line. Has to be locally run, not on the web.
+
+sue@MacBook-Air ~ % python3
+Python 3.12.6 (main, Sep  6 2024, 19:03:47) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os 
+>>> os.cpu_count()
+8
+>>> 
+
+
+sue@MacBook-Air ~ % irb
+irb(main):001> require 'etc'
+irb(main):002> Etc.nprocessors
+irb(main):003> 
+=> 8
+irb(main):004> 
+
+
+sue@MacBook-Air ~ % node
+Welcome to Node.js v20.12.2.
+Type ".help" for more information.
+> const os = require('os');
+undefined
+> os.cpus().length;
+8
+> 
+
+Total[10]: 10

@@ -1,0 +1,15 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "guessing_game"
+path = "src/guessing_game.rs"
+
+[dependencies]
+rand = "0.8"
+
+[[bin]]
+name = "rust"
+path = "src/guessing_game_console.rs"

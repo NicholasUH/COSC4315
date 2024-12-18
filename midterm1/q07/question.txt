@@ -1,0 +1,8 @@
+In a lot of languages a recursion runs into stack overflow errors for very large values. On the other hand, a tail call 
+optimized recursion does not. Why is that? How is that made possible?
+
+Recursion can run into stack overflow errors for very large values when the recursion depth becomes too large. This is because each recursive call adds a new frame to the call stack, which has a limited size. If the recursion is deep enough/involves a large number of calls, the stack can overflow and cause the program to crash. 
+
+Tail call optimized recursion avoids stack overflow errors by using an iterative process, instead of a recursive process, while maintaining a recursive procedure. It reuses the current stack frame for a function's recursive call, rather than creating a new one because no further computation is required in the current frame. This is made possible when the recursive call is the last operation performed before the function returns. 
+
+Total[10]: 10

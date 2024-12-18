@@ -1,0 +1,14 @@
+What are tuples and what's special about them? 
+
+Where would we use them?
+
+Give a few examples of usage of tuples from two languages that we covered in 
+this course (give code in separate files with proper extensions).
+
+A tuple is an immutable, ordered collection of elements that can hold data of different types. They are lightweight, using minimal memory and offering faster performance compared to lists, making them ideal for grouping data or returning multiple values from a function.
+
+Tuples maintain the order of elements and support heterogeneous data types, allowing them to group diverse elements into a single, consistent structure. Their immutability ensures data integrity, and they are hashable, making them suitable for use as dictionary keys.
+
+Common use cases include returning multiple values from a function, passing grouped arguments to functions, grouping related data, and serving as dictionary keys.
+
+Total[10]: 10

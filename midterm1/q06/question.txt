@@ -1,0 +1,9 @@
+A developer shows you a line of valid code:
+
+var max = 1000;
+
+Does this line of code belong to a statically typed language or a dynamically typed language? How can you tell? Discuss.
+
+It is not possible to tell if this code belongs to a statically or dynamically typed language. Both statically and dynamically typed languages allow the use of the keyword var to declare variables. Since statically typed languages verifies type at compile time, it uses type inference to infer the type based on the initial value assigned to the "var" variable, even though the exact type is not explicitly declared by the developer. For example, Java, C#, and Scala are statically typed languages that use "var." Dynamically typed languages, such as Lua, JavaScript, and PHP, also use "var" because variable types are determined at runtime.  
+
+Total[10]: 10
